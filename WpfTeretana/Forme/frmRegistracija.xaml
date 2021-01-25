@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfTeretana.Forme.frmRegistracija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTeretana.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmjeni registraciju" Height="290" Width="350" Icon="..\img\logo2.png" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Datum registacije:" HorizontalAlignment="Left" Margin="25,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cijena regitracije:" HorizontalAlignment="Left" Margin="25,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Novi član:" HorizontalAlignment="Left" Margin="25,85,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCijenaRegistracije" HorizontalAlignment="Left" Height="23" Margin="175,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <CheckBox x:Name="cbxNoviClan" HorizontalAlignment="Left" Margin="175,85,0,0" VerticalAlignment="Top" Width="142" IsChecked="False"/>
+        <Label Content="Zaposleni:" HorizontalAlignment="Left" Margin="25,119,0,0" VerticalAlignment="Top"/>
+        <Label Content="Članstvo:" HorizontalAlignment="Left" Margin="25,149,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="25,210,0,0" VerticalAlignment="Top" Width="85" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="0,210,25,0" VerticalAlignment="Top" Width="85" Click="btnOtkazi_Click" RenderTransformOrigin="0.483,0.676"/>
+        <ComboBox x:Name="cbZaposleni" HorizontalAlignment="Left" Margin="175,115,0,0" VerticalAlignment="Top" Width="142" DisplayMemberPath="Zaposleni" SelectedValuePath="ZaposleniID"/>
+        <ComboBox x:Name="cbClanstvo" HorizontalAlignment="Left" Margin="175,145,0,0" VerticalAlignment="Top" Width="142" DisplayMemberPath="Clanstvo" SelectedValuePath="ClanstvoID"/>
+        <DatePicker x:Name="dpDatumRegistracije" HorizontalAlignment="Left" Margin="175,25,0,0" VerticalAlignment="Top" Width="142"/>
+
+    </Grid>
+</Window>

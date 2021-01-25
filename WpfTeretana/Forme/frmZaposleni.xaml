@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfTeretana.Forme.frmZaposleni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTeretana.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmjeni zaposlenog" Height="350" Width="350" Icon="..\img\logo2.png" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Ime zaposlenog:" HorizontalAlignment="Left" Margin="25,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prezime zaposlenog:" HorizontalAlignment="Left" Margin="25,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Trener:" HorizontalAlignment="Left" Margin="25,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adresa zaposenog:" HorizontalAlignment="Left" Margin="25,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefon zaposlenog:" HorizontalAlignment="Left" Margin="25,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-mail zaposlenog:" HorizontalAlignment="Left" Margin="25,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lozinka:" HorizontalAlignment="Left" Margin="25,211,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtImeZaposlenog" HorizontalAlignment="Left" Height="23" Margin="175,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txtPrezimeZaposlenog" HorizontalAlignment="Left" Height="23" Margin="175,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txtAdresaZaposlenog" HorizontalAlignment="Left" Height="23" Margin="175,115,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txtTelefonZaposlenog" HorizontalAlignment="Left" Height="23" Margin="175,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txtEmailZaposlenog" HorizontalAlignment="Left" Height="23" Margin="175,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txtLozinkaZaposlenog" HorizontalAlignment="Left" Height="23" Margin="175,205,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="25,261,0,0" VerticalAlignment="Top" Width="85" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="0,261,25,0" VerticalAlignment="Top" Width="86" Click="btnOtkazi_Click"/>
+        <CheckBox x:Name="cbxTrener" Content="" HorizontalAlignment="Left" Margin="175,97,0,0" VerticalAlignment="Top" Width="142" IsChecked="False"/>
+
+    </Grid>
+</Window>

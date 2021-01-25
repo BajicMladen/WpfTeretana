@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfTeretana.Forme.frmClanstvo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTeretana.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmjeni članstvo" Height="250" Width="350" Icon="..\img\logo2.png" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Datum početka članarine:" HorizontalAlignment="Left" Margin="25,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum isteka članarine:" HorizontalAlignment="Left" Margin="25,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Korisnik:" HorizontalAlignment="Left" Margin="25,89,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vrsta članstva:" HorizontalAlignment="Left" Margin="25,119,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpDatumPocetka" HorizontalAlignment="Left" Margin="175,25,0,0" VerticalAlignment="Top" Width="142"/>
+        <DatePicker x:Name="dpDatumIsteka" HorizontalAlignment="Left" Margin="175,55,0,0" VerticalAlignment="Top" Width="142"/>
+        <ComboBox x:Name="cbKorisnik" HorizontalAlignment="Left" Margin="175,85,0,0" VerticalAlignment="Top" Width="142" DisplayMemberPath="Korisnik" SelectedValuePath="KorisnikID"/>
+        <ComboBox x:Name="cbVrstaClanstva" HorizontalAlignment="Left" Margin="175,115,0,0" VerticalAlignment="Top" Width="142" DisplayMemberPath="NazivVrsteClanstva" SelectedValuePath="VrstaClanstvaID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="25,169,0,0" VerticalAlignment="Top" Width="85" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="0,169,25,0" VerticalAlignment="Top" Width="85" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>

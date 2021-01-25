@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfTeretana.Forme.frmDolazak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTeretana.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmjeni dolazak" Height="240" Width="350" Icon="..\img\logo2.png" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Broj ključa:" HorizontalAlignment="Left" Margin="25,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zaposleni:" HorizontalAlignment="Left" Margin="25,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Korisnik:" HorizontalAlignment="Left" Margin="25,89,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBrojKljuca" HorizontalAlignment="Left" Height="23" Margin="175,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="142"/>
+        <ComboBox x:Name="cbZaposleni" HorizontalAlignment="Left" Margin="175,55,0,0" VerticalAlignment="Top" Width="142" DisplayMemberPath="Zaposleni" SelectedValuePath="ZaposleniID"/>
+        <ComboBox x:Name="cbKorisnik" HorizontalAlignment="Left" Margin="175,85,0,0" VerticalAlignment="Top" Width="142" DisplayMemberPath="Korisnik" SelectedValuePath="KorisnikID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="25,154,0,0" VerticalAlignment="Top" Width="85" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="0,154,25,0" VerticalAlignment="Top" Width="85" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>
